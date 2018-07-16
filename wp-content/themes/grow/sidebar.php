@@ -8,11 +8,12 @@
 
 		<div id="sidebar">
 		<div id="sidebar-core">
-
+			<?php wp_login_form(); ?>
 			<?php do_action( 'before_sidebar' ); ?>
 			<?php if ( ! dynamic_sidebar( thinkup_input_sidebars() ) ) : ?>
 
 				<aside class="widget widget_text">
+				
 					<h3 class="widget-title"><?php _e( 'Please Add Widgets', 'grow' ); ?></h3>
 					<div class="textwidget"><div class="error-icon">
 						<p><?php _e( 'Remove this message by adding widgets to the Sidebar from the Widgets section of the Wordpress admin area.', 'grow' ); ?></p>
